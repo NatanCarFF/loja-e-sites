@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>🚀🖥️ ESPAÇO PC</title>
+    <title>🌐 Criação de Sites e Lojas Virtuais</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Ícone -->
-    <link rel="icon" type="image/svg+xml" sizes="16x16" href="icone/foguete.svg">
+    <link rel="icon" type="image/svg" sizes="16x16" href="data/selos/roquet.svg">
     <style>
         body {
             background: radial-gradient(circle, #0b3d91, #000428);
-            position: relative;
-            margin: 0;
-            padding: 0;
+            color: white;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-            min-height: 100vh;
+            padding: 2rem;
             overflow-x: hidden;
+            position: relative;
         }
 
         .custom-cursor {
@@ -28,18 +25,6 @@
             font-size: 2rem;
             pointer-events: none;
             transition: transform 0.05s linear;
-        }
-
-        .button-hover {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding: 15px;
-            transition: transform 0.2s ease-in-out;
-        }
-        .button-hover:hover {
-            transform: scale(1.05);
         }
 
         .star {
@@ -53,10 +38,42 @@
             0%, 100% { opacity: 0; transform: scale(0.5); }
             50% { opacity: 1; transform: scale(1); }
         }
+
+        .card {
+            background-color: #1e2a47;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #4fd1c5;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <script>
+        // Custom Cursor (Foguete)
         const customCursor = document.createElement('div');
         customCursor.classList.add('custom-cursor');
         customCursor.innerText = '🚀';
@@ -67,6 +84,7 @@
             customCursor.style.top = `${e.pageY}px`;
         });
 
+        // Criando Estrelas no Fundo
         function createStars() {
             for (let i = 0; i < 30; i++) {
                 let star = document.createElement('div');
@@ -82,23 +100,84 @@
         createStars();
     </script>
 
-    <div class="w-full max-w-md p-6 bg-white rounded-2xl shadow-lg border border-gray-200">
-        <header class="text-center mb-8">
-            <h1 class="text-3xl font-extrabold text-blue-600">🚀🖥️ ESPAÇO PC</h1>
-            <p class="text-lg text-gray-600">Seu PC, sua solução! Escolha o serviço que você precisa e entre em contato.</p>
-        </header>
-        <nav>
-            <ul class="space-y-4">
-                <li><a href="#manutencao" class="button-hover bg-blue-500 text-white rounded-xl block">🖥️ Manutenção e Reparo de PC</a></li>
-                <li><a href="#instalacao-app" class="button-hover bg-green-500 text-white rounded-xl block">📦 Instalação de Aplicativos</a></li>
-                <li><a href="#orcamento-pc" class="button-hover bg-yellow-500 text-white rounded-xl block">🖥️ Orçamento para PC de Escritório</a></li>
-                <li><a href="#orcamento-gamer" class="button-hover bg-red-500 text-white rounded-xl block">🎮 Orçamento para PC Gamer</a></li>
-                <li><a href="#efetuar-pagamento" class="button-hover bg-orange-500 text-white rounded-xl block">💳 Efetuar Pagamento</a></li>
-                <li><a href="#criar-site" class="button-hover bg-purple-500 text-white rounded-xl block">🌐 Criação de Sites e Lojas Virtuais</a></li>
-                <li><a href="#criar-app" class="button-hover bg-teal-500 text-white rounded-xl block">📱 Desenvolvimento de Aplicativos Android</a></li>
-                <li><a href="https://wa.me/5591984608108" target="_blank" class="button-hover bg-teal-700 text-white rounded-xl block">💬 Falar no WhatsApp</a></li>
-            </ul>
-        </nav>
+    <header class="text-center mb-8">
+        <h1 class="text-3xl font-extrabold text-blue-600">
+            🌐 Criação de Sites e Lojas Virtuais
+        </h1>
+        <p class="text-lg text-gray-300">Confira alguns exemplos de sites e lojas virtuais criados com os principais modelos disponíveis!</p>
+    </header>
+
+    <div class="flex flex-wrap justify-center">
+        <!-- Exemplo de Modelo de Loja Virtual -->
+        <div class="card">
+            <h2 class="text-xl text-yellow-500">Loja Virtual</h2>
+            <img src="https://github.com/NatanCarFF/Minha-Loja/blob/main/data/selos/loja.jpg?raw=true" alt="Loja Virtual">
+            <p class="text-gray-300">Modelo de loja online com design e-commerce integrado.</p>
+            <a href="#loja-exemplo">Visualizar Exemplo</a>
+        </div>
+
+        <!-- Exemplo de Modelo de Portfólio Profissional -->
+        <div class="card">
+            <h2 class="text-xl text-yellow-500">Portfólio Profissional</h2>
+            <img src="https://github.com/NatanCarFF/Minha-Loja/blob/main/data/selos/portifolio.jpg?raw=true" alt="Portfólio Profissional">
+            <p class="text-gray-300">Modelo ideal para mostrar seu trabalho e projetos.</p>
+            <a href="#portfolio-exemplo">Visualizar Exemplo</a>
+        </div>
+
+        <!-- Exemplo de Modelo de Blog -->
+        <div class="card">
+            <h2 class="text-xl text-yellow-500">Blog Pessoal</h2>
+            <img src="https://github.com/NatanCarFF/Minha-Loja/blob/main/data/selos/blog.jpg?raw=true" alt="Blog Pessoal">
+            <p class="text-gray-300">Modelo para criação de blogs com layout simples e moderno.</p>
+            <a href="#blog-exemplo">Visualizar Exemplo</a>
+        </div>
+
+        <!-- Exemplo de Modelo de Site Institucional -->
+        <div class="card">
+            <h2 class="text-xl text-yellow-500">Site Institucional</h2>
+            <img src="https://github.com/NatanCarFF/Minha-Loja/blob/main/data/selos/institucional.jpg?raw=true" alt="Site Institucional">
+            <p class="text-gray-300">Modelo para empresas ou organizações.</p>
+            <a href="#institucional-exemplo">Visualizar Exemplo</a>
+        </div>
+
+        <!-- Exemplo de Modelo de Landing Page -->
+        <div class="card">
+            <h2 class="text-xl text-yellow-500">Landing Page</h2>
+            <img src="https://github.com/NatanCarFF/Minha-Loja/blob/main/data/selos/page.jpg?raw=true" alt="Landing Page">
+            <p class="text-gray-300">Modelo simples para captar leads ou divulgar produtos.</p>
+            <a href="#landing-exemplo">Visualizar Exemplo</a>
+        </div>
+    </div>
+
+    <!-- Exemplos de Modelos (Visíveis na Página) -->
+    <div id="loja-exemplo" class="w-full max-w-lg p-6 bg-white rounded-2xl shadow-lg mt-10">
+        <h3 class="text-2xl font-bold text-blue-600">Exemplo de Loja Virtual</h3>
+        <img src="https://github.com/NatanCarFF/Minha-Loja/blob/main/data/selos/loja%20(2).jpg?raw=true" alt="Exemplo de Loja Virtual" class="mb-4">
+        <p class="text-gray-600">Este é um exemplo de modelo de loja virtual com a integração completa de e-commerce, ideal para quem deseja vender online.</p>
+    </div>
+
+    <div id="portfolio-exemplo" class="w-full max-w-lg p-6 bg-white rounded-2xl shadow-lg mt-10">
+        <h3 class="text-2xl font-bold text-blue-600">Exemplo de Portfólio Profissional</h3>
+        <img src="https://github.com/NatanCarFF/Minha-Loja/blob/main/data/selos/portifolio%20(2).jpg?raw=true" alt="Exemplo de Portfólio Profissional" class="mb-4">
+        <p class="text-gray-600">Este é um exemplo de modelo de portfólio ideal para mostrar seu trabalho, projetos e experiências profissionais.</p>
+    </div>
+
+    <div id="blog-exemplo" class="w-full max-w-lg p-6 bg-white rounded-2xl shadow-lg mt-10">
+        <h3 class="text-2xl font-bold text-blue-600">Exemplo de Blog Pessoal</h3>
+        <img src="https://github.com/NatanCarFF/Minha-Loja/blob/main/data/selos/blog%20(2).jpg?raw=true" alt="Exemplo de Blog Pessoal" class="mb-4">
+        <p class="text-gray-600">Este modelo é simples, responsivo, e ideal para quem quer compartilhar suas ideias ou criar um diário online.</p>
+    </div>
+
+    <div id="institucional-exemplo" class="w-full max-w-lg p-6 bg-white rounded-2xl shadow-lg mt-10">
+        <h3 class="text-2xl font-bold text-blue-600">Exemplo de Site Institucional</h3>
+        <img src="https://github.com/NatanCarFF/Minha-Loja/blob/main/data/selos/institucional%20(2).jpg?raw=true" alt="Exemplo de Site Institucional" class="mb-4">
+        <p class="text-gray-600">Modelo para empresas que buscam um site informativo, com áreas para serviços, sobre e contato.</p>
+    </div>
+
+    <div id="landing-exemplo" class="w-full max-w-lg p-6 bg-white rounded-2xl shadow-lg mt-10">
+        <h3 class="text-2xl font-bold text-blue-600">Exemplo de Landing Page</h3>
+        <img src="https://github.com/NatanCarFF/Minha-Loja/blob/main/data/selos/page%20(2).jpg?raw=true" alt="Exemplo de Landing Page" class="mb-4">
+        <p class="text-gray-600">Modelo ideal para campanhas promocionais, coleta de leads e lançamentos de produtos.</p>
     </div>
 
     <footer class="w-full text-center text-gray-600 py-4 mt-8">
